@@ -32,7 +32,7 @@ class Console_game_controller
     valid_move = false
     until (valid_move)
       @in_out.print("Please enter a free number from 1-#{board.max_turns}\n")
-      player_input = @in_out.select_move - 1
+      player_input = @in_out.select_move
       valid_move = player_input <= @tictactoe_jules.board.max_turns && player_input >= -@tictactoe_jules.board.max_turns && @tictactoe_jules.board.is_square_free?(player_input)
     end
     @tictactoe_jules.current_player.select_move(board, player_input)

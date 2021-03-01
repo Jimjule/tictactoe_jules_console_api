@@ -1,9 +1,5 @@
 require_relative 'console_game_controller'
 require_relative 'console_in_out'
-# require './lib/tictactoe_jules'
-# require './lib/player_factory'
-# require './lib/validate'
-# require './lib/board'
 
 class Tictactoe_console_setup
   attr_reader :console_game_controller, :in_out
